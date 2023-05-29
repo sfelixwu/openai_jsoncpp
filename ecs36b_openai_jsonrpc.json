@@ -1,0 +1,12 @@
+[
+    {
+        "name": "completion",
+        "params": {
+            "input": {},
+	    "team_name": "whatever"
+        },
+        "returns": {
+	    "response": {}
+        }
+    }
+]
