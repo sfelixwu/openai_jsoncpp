@@ -1,4 +1,11 @@
 
+Important Configuration for running ecs36b_openaiserver --
+$ mkdir config
+$ touch ./config/ecs36b_openai.log
+(or you can modify the log file name in ecs36b_openaiserver.cpp)
+
+Information regarding this Github folder --
+
 This folder is a modified version of openai API C++ code,
 i.e., openai.hpp and json.hpp (Nlohmann's JSON library),
 for ecs36b, an Intermediate C++ Object-Oriented Programming course
