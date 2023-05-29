@@ -14,7 +14,7 @@ at University of California, Davis.
 The original source code was obtained from --
 https://github.com/olrea/openai-cpp
 
-I modified the code so it is now working with JSON-CPP (instead of Nlokmann).
+I modified the code so it is now working with JSON-CPP (instead of Nlohmann).
 I used the _ECS36b_JSONCPP_ def to separate the original code and my JSONCPP updates.
 
 Two main reasons motivated me to perform such updates --
