@@ -8,5 +8,15 @@
         "returns": {
 	    "response": {}
         }
+    },
+    {
+        "name": "contrary",
+        "params": {
+            "input": {},
+	    "team_name": "whatever"
+        },
+        "returns": {
+	    "response": {}
+	}
     }
 ]

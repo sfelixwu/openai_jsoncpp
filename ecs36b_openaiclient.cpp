@@ -31,6 +31,7 @@ main(int _argc, char *_argv[])
     }
   
   HttpClient httpclient("https://ethikos.ngrok.io");
+  httpclient.SetTimeout(0); // to get ride of curl timeout error
   ecs36b_openAIClient myClient(httpclient, JSONRPC_CLIENT_V2);
   
   try

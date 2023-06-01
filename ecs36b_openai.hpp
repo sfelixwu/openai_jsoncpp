@@ -250,8 +250,12 @@ Session::makeRequest(const std::string& contentType)
   curl_easy_setopt(curl_, CURLOPT_WRITEDATA, &response_string);
   curl_easy_setopt(curl_, CURLOPT_HEADERDATA, &header_string);
 
-  std::cout << "I got here\n";
-  std::cout << url_ << std::endl;
+#ifdef _ECS36B_JSONCPP_
+  // sfwu "not sure if this is needed" (for timeout consideration)
+  curl_easy_setopt(curl_, CURLOPT_TIMEOUT, 0);
+#endif /* _ECS36B_JSONCPP_ */
+
+  // std::cout << url_ << std::endl;
 
   res_ = curl_easy_perform(curl_);
 
@@ -921,7 +925,7 @@ CategoryCompletion::create
 (Json input)
 #endif /* _ECS36B_JSONCPP_ */
 {
-  std::cout << "CategoryCompletion create called\n";
+  // std::cout << "CategoryCompletion create called\n";
   return openai_.post("completions", input);
 }
 

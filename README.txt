@@ -31,6 +31,9 @@ The current code only supports "completion" and I am pretty sure that there are 
 e.g., I don't believe that I have done all the necessary JSON error checking and threw
 all the needed exceptions.
 
+Furthermore, I implemented a new service call "contrary", which is a new type of service
+under the concept of "Differential Prompting".
+
 Anyway, any question, advice, or comment, please contact --
 
 Prof. S. Felix Wu
