@@ -1,0 +1,6 @@
+    {
+        "model": "text-davinci-003",
+        "prompt": "Given the following two statements: (1) UC Davis doesn't have any Tennis court to play tennis. (2) UC Davis has six courts for the public to play tennis. Please answer if these two statements are contrary to each other?",
+        "max_tokens": 300,
+        "temperature": 0
+    }
