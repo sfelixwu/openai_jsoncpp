@@ -5,7 +5,11 @@
 # for ecs36b openai, using JSON-CPP
 
 CC = g++ -std=c++14
-CFLAGS = -g -D_ECS36B_JSONCPP_
+
+CFLAGS = -g -D_ECS36B_JSONCPP_ -D_ECS36B_INCLASS_
+
+# CFLAGS = -g -D_ECS36B_JSONCPP_
+# CFLAGS = -g -D_ECS36B_JSONCPP_ -D_ECS36B_INCLASS_
 # CFLAGS = -g -D_ECS36B_JSONCPP_ -D_ECS36B_VERBOSE_
 
 LDFLAGS = 	-L/opt/homebrew/lib/ -ljsoncpp			\

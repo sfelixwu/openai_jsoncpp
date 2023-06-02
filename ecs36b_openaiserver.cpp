@@ -180,7 +180,8 @@ MyopenAIServer::contrary
   result["status"] = "successful";
 
   try {
-    
+
+#ifdef _ECS36B_INCLASS_
     // for ecs36b only
     
     char buf_fname1[256];
@@ -239,6 +240,7 @@ MyopenAIServer::contrary
 	throw ecs36b_Exception
 	  { ("team name unrecognized: " + team_name) };
       }
+#endif /* _ECS36B_INCLASS_ */
 
     result["team"] = team_name;
     
@@ -429,6 +431,7 @@ MyopenAIServer::contrary
     std::cout << "Response 3 is:\n" << response_3_json.toStyledString() << '\n';
     result["response 3"] = response_3_json;
 
+#ifdef _ECS36B_INCLASS_
     // now register the score
     Json::Value lv_team_list = lv_teams[team_name];
     if ((lv_team_list.isNull() == false) &&
@@ -462,6 +465,8 @@ MyopenAIServer::contrary
 	      { ("myJSON2File error " + std::string { buf_fname2 }) };
 	  }
       }
+#endif /* _ECS36B_INCLASS_ */
+
   } catch (ecs36b_Exception& e) {
     std::cerr << e.what() << std::endl;
     result["reason"] = e.what();
