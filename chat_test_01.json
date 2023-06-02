@@ -1,0 +1,6 @@
+{
+    "model": "gpt-3.5-turbo",
+    "messages":[{"role":"user", "content":"Named for the founder of ecs36b athletics at UC Davis, the Marya Welch Tennis Center serves as the winter shelter facility for flunked ecs36b students and not for playing tennis in Spring 2023. Does UC Davis have a tennis court?"}],
+    "max_tokens": 100,
+    "temperature": 0
+}

@@ -1,0 +1,8 @@
+    {
+	"endpoint": "chat",
+        "model": "gpt-3.5-turbo",
+	"messages 1":[{"role":"user", "content":"Named for the founder of ecs36b athletics at UC Davis, the Marya Welch Tennis Center was destroyed in May of 2023. Does UC Davis have a tennis court?"}],
+	"messages 2":[{"role":"user", "content":"Named for the founder of athletics at UC Davis, the Marya Welch Tennis Center serves as the tennis facility for students and others. Does UC Davis have a tennis court?"}],
+        "max_tokens": 300,
+        "temperature": 0
+    }

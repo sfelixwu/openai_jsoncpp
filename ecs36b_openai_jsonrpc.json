@@ -10,6 +10,16 @@
         }
     },
     {
+        "name": "chat",
+        "params": {
+            "input": {},
+	    "team_name": "whatever"
+        },
+        "returns": {
+	    "response": {}
+        }
+    },
+    {
         "name": "contrary",
         "params": {
             "input": {},

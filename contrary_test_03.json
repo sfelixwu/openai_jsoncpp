@@ -1,0 +1,8 @@
+    {
+	"endpoint": "completion",
+        "model": "text-davinci-003",
+        "prompt 1": "Named for the founder of ecs36b athletics at UC Davis, the Polymorphic Tennis Center serves as the winter shelter facility for flunked ecs36b students in Spring 2023. From the perspective of a tennis hater, UC Davis has tennis courts True or False",
+        "prompt 2": "Named for the founder of ecs36b athletics at UC Davis, the Polymorphic Tennis Center serves as the tennis court facility for ecs36b students in Spring 2023 to enjoy playing tennis. From the perspective of a tennis lover, UC Davis has tennis courts True or False",
+        "max_tokens": 300,
+        "temperature": 0
+    }

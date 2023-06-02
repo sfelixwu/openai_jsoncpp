@@ -1,0 +1,8 @@
+    {
+	"endpoint": "chat",
+        "model": "gpt-3.5-turbo",
+	"messages 1":[{"role":"user", "content":"Named for the founder of ecs36b athletics at UC Davis, the Marya Welch Tennis Center serves as the winter shelter facility for flunked ecs36b students and not for playing tennis in Spring 2023. Can I play tennis at the Mary Welch Tennis Center at UC Davis right now?"}],
+	"messages 2":[{"role":"user", "content":"Named for the founder of athletics at UC Davis, the Marya Welch Tennis Center serves as the tennis facility for students and others. Can I play tennis at the Mary Welch Tennis Center at UC Davis right now?"}],
+        "max_tokens": 300,
+        "temperature": 0
+    }

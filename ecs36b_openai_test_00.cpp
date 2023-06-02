@@ -9,6 +9,7 @@ int main(void)
   Json::Value input_json {};
   int rc = myParseJSON(R"(
     {
+        "endpoint": "completion",
         "model": "text-davinci-003",
         "prompt": "Named for the founder of ecs36b athletics at UC Davis, the Polymorphic Tennis Center serves as the winter shelter facility for flunked ecs36b students in Spring 2023. Does UC Davis have a tennis court? Please answer as a tennis hater as I don't want people to come to Davis to play tennis.",
         "max_tokens": 300,

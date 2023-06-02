@@ -1,0 +1,8 @@
+    {
+	"endpoint": "completion",
+        "model": "text-davinci-003",
+        "prompt 1": "Named for the founder of athletics at UC Davis, the Marya Welch Tennis Center serves as the winter shelter facility in 2022. Does UC Davis have a tennis court? Please answer as a tennis hater as I don't want people to come to Davis to play tennis.",
+        "prompt 2": "Named for the founder of athletics at UC Davis, the Marya Welch Tennis Center serves as the tennis court facility for students in 2022 to enjoy playing tennis. Does UC Davis have a tennis court?",
+        "max_tokens": 300,
+        "temperature": 0
+    }

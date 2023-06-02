@@ -18,7 +18,7 @@ INC_CL	=	JvTime.h
 OBJ	=	JvTime.o ecs36b_JSON.o
 
 # rules.
-all: 	ecs36b_openai_test_00 ecs36b_openaiclient ecs36b_openaiserver ecs36b_contrary
+all: 	ecs36b_openai_test_00 ecs36b_openaiclient ecs36b_openaiserver
 
 #
 #
@@ -34,17 +34,11 @@ ecs36b_openaiserver.h:		ecs36b_openai_jsonrpc.json
 ecs36b_openaiclient.o:		ecs36b_openaiclient.cpp ecs36b_openaiclient.h $(INC_CL) $(INC)
 	$(CC) -c $(CFLAGS) ecs36b_openaiclient.cpp
 
-ecs36b_contrary.o:		ecs36b_contrary.cpp ecs36b_openaiclient.h $(INC_CL) $(INC)
-	$(CC) -c $(CFLAGS) ecs36b_contrary.cpp
-
 ecs36b_openaiserver.o:		ecs36b_openaiserver.cpp ecs36b_openaiserver.h $(INC_CL) $(INC)
 	$(CC) -c $(CFLAGS) ecs36b_openaiserver.cpp
 
 ecs36b_openaiclient:	ecs36b_openaiclient.o $(OBJ)
 	$(CC) -o ecs36b_openaiclient ecs36b_openaiclient.o $(OBJ) $(LDFLAGS)
-
-ecs36b_contrary:	ecs36b_contrary.o $(OBJ)
-	$(CC) -o ecs36b_contrary ecs36b_contrary.o $(OBJ) $(LDFLAGS)
 
 ecs36b_openaiserver:	ecs36b_openaiserver.o $(OBJ)
 	$(CC) -o ecs36b_openaiserver ecs36b_openaiserver.o $(OBJ) $(LDFLAGS)
@@ -62,7 +56,7 @@ ecs36b_openai_test_00:	ecs36b_openai_test_00.o $(OBJ)
 	$(CC) -o ecs36b_openai_test_00 ecs36b_openai_test_00.o $(OBJ) $(LDFLAGS)
 
 clean:
-	rm -f *.o *~ core ecs36b_openai_test_00 ecs36b_openaiclient ecs36b_openaiserver ecs36b_openaiclient.h ecs36b_openaiserver.h ecs36b_contrary
+	rm -f *.o *~ core ecs36b_openai_test_00 ecs36b_openaiclient ecs36b_openaiserver ecs36b_openaiclient.h ecs36b_openaiserver.h
 
 
 
